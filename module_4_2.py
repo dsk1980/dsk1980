@@ -1,6 +1,5 @@
 def test_function():
-    print(test_function())
     def inner_function():
-        print(inner_function())
-
-# print(inner_function()) # Ошибка NameError: имя 'inner_function' не определено.
+        print('Я в области видимости функции test_function')
+    inner_function()
+#inner_function() # Ошибка NameError: имя 'inner_function' не определено. Вы имели в виду 'test_function'?
